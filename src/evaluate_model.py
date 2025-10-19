@@ -127,9 +127,9 @@ def evaluate_model(model_path, data_root, split="test", batch_size=32, model_typ
     loader = torch.utils.data.DataLoader(dataset, batch_size=batch_size)
     class_names = dataset.classes
 
-    print(f"🔍 Evaluating model: {model_path}")
-    print(f"📊 Dataset: {split} split ({len(dataset)} samples)")
-    print(f"🎯 Classes: {class_names}")
+    print(f"Evaluating model: {model_path}")
+    print(f"Dataset: {split} split ({len(dataset)} samples)")
+    print(f"Classes: {class_names}")
 
 
     if model_type == "cnn":
@@ -174,17 +174,17 @@ def evaluate_model(model_path, data_root, split="test", batch_size=32, model_typ
 
 
     print("\n" + "=" * 50)
-    print("📈 CLASSIFICATION REPORT")
+    print("CLASSIFICATION REPORT")
     print("=" * 50)
     print(classification_report(y_true, y_pred, target_names=class_names, digits=4))
 
     print("\n" + "=" * 50)
-    print("🎯 ADDITIONAL METRICS")
+    print("ADDITIONAL METRICS")
     print("=" * 50)
     calculate_additional_metrics(y_true, y_pred, class_names)
 
     print("\n" + "=" * 50)
-    print("📊 GENERATING PLOTS")
+    print("GENERATING PLOTS")
     print("=" * 50)
     plot_confusion_matrix(y_true, y_pred, class_names, f"{model_type.lower()}_confusion_matrix.png", model_label)
     plot_class_metrics(y_true, y_pred, class_names, f"{model_type.lower()}_class_metrics.png", model_label)
@@ -193,7 +193,7 @@ def evaluate_model(model_path, data_root, split="test", batch_size=32, model_typ
     if y_prob and np.array(y_prob).ndim == 2:
         plot_roc_curves(y_true, y_prob, class_names, f"{model_type.lower()}_roc_curves.png", model_label)
 
-    print(f"\n✅ Evaluation complete! Plots saved as:")
+    print(f"\nEvaluation complete! Plots saved as:")
     print(f"   - {model_type.lower()}_confusion_matrix.png")
     print(f"   - {model_type.lower()}_class_metrics.png")
     print(f"   - {model_type.lower()}_roc_curves.png")
