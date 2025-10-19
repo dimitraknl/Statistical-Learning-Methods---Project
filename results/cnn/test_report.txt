@@ -1,0 +1,41 @@
+🔍 Evaluating model: models/cnn_run1.pth
+📊 Dataset: test split (5099 samples)
+🎯 Classes: ['MildDemented', 'ModerateDemented', 'NonDemented', 'VeryMildDemented']
+
+==================================================
+📈 CLASSIFICATION REPORT
+==================================================
+                  precision    recall  f1-score   support
+
+    MildDemented     0.8233    0.9085    0.8638      1344
+ModerateDemented     0.9968    0.9773    0.9870       971
+     NonDemented     0.9117    0.8319    0.8700      1440
+VeryMildDemented     0.8185    0.8222    0.8203      1344
+
+        accuracy                         0.8772      5099
+       macro avg     0.8876    0.8850    0.8853      5099
+    weighted avg     0.8801    0.8772    0.8776      5099
+
+
+==================================================
+🎯 ADDITIONAL METRICS
+==================================================
+
+=== Additional Metrics ===
+Overall Accuracy: 0.8772
+Balanced Accuracy: 0.8850
+Cohen's Kappa: 0.8353
+
+=== Per-Class Accuracy ===
+MildDemented: 0.9085
+ModerateDemented: 0.9773
+NonDemented: 0.8319
+VeryMildDemented: 0.8222
+
+==================================================
+📊 GENERATING PLOTS
+==================================================
+
+✅ Evaluation complete! Plots saved as:
+   - cnn_confusion_matrix.png
+   - cnn_class_metrics.png

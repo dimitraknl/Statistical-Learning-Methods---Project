@@ -1,0 +1,41 @@
+🔍 Evaluating model: models/svm_linear_best.pkl
+📊 Dataset: test split (5099 samples)
+🎯 Classes: ['MildDemented', 'ModerateDemented', 'NonDemented', 'VeryMildDemented']
+
+==================================================
+📈 CLASSIFICATION REPORT
+==================================================
+                  precision    recall  f1-score   support
+
+    MildDemented     0.5494    0.6615    0.6003      1344
+ModerateDemented     0.7899    0.8713    0.8286       971
+     NonDemented     0.6452    0.5833    0.6127      1440
+VeryMildDemented     0.4991    0.4115    0.4511      1344
+
+        accuracy                         0.6135      5099
+       macro avg     0.6209    0.6319    0.6232      5099
+    weighted avg     0.6090    0.6135    0.6079      5099
+
+
+==================================================
+🎯 ADDITIONAL METRICS
+==================================================
+
+=== Additional Metrics ===
+Overall Accuracy: 0.6135
+Balanced Accuracy: 0.6319
+Cohen's Kappa: 0.4825
+
+=== Per-Class Accuracy ===
+MildDemented: 0.6615
+ModerateDemented: 0.8713
+NonDemented: 0.5833
+VeryMildDemented: 0.4115
+
+==================================================
+📊 GENERATING PLOTS
+==================================================
+
+✅ Evaluation complete! Plots saved as:
+   - cnn_confusion_matrix.png
+   - cnn_class_metrics.png

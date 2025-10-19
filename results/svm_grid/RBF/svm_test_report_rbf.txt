@@ -1,0 +1,41 @@
+🔍 Evaluating model: models/svm_rbf_best.pkl
+📊 Dataset: test split (5099 samples)
+🎯 Classes: ['MildDemented', 'ModerateDemented', 'NonDemented', 'VeryMildDemented']
+
+==================================================
+📈 CLASSIFICATION REPORT
+==================================================
+                  precision    recall  f1-score   support
+
+    MildDemented     0.7497    0.8132    0.7802      1344
+ModerateDemented     0.9254    0.9454    0.9353       971
+     NonDemented     0.8197    0.7701    0.7941      1440
+VeryMildDemented     0.7361    0.7098    0.7227      1344
+
+        accuracy                         0.7990      5099
+       macro avg     0.8077    0.8097    0.8081      5099
+    weighted avg     0.7993    0.7990    0.7985      5099
+
+
+==================================================
+🎯 ADDITIONAL METRICS
+==================================================
+
+=== Additional Metrics ===
+Overall Accuracy: 0.7990
+Balanced Accuracy: 0.8097
+Cohen's Kappa: 0.7304
+
+=== Per-Class Accuracy ===
+MildDemented: 0.8132
+ModerateDemented: 0.9454
+NonDemented: 0.7701
+VeryMildDemented: 0.7098
+
+==================================================
+📊 GENERATING PLOTS
+==================================================
+
+✅ Evaluation complete! Plots saved as:
+   - cnn_confusion_matrix.png
+   - cnn_class_metrics.png
